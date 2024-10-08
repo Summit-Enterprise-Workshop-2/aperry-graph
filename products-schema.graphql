@@ -140,9 +140,21 @@ type User @key(fields: "id") {
 A specific review by a user about a product. This contains all the high level details about a review including the body of the review.
 """
 type Review @key(fields: "id") {
+  """
+  Optional size option for this variant
+  """
   id: Int!
+  """
+  Optional size option for this variant
+  """
   body: String!
+  """
+  Optional size option for this variant
+  """
   product: Product!
+  """
+  Optional size option for this variant
+  """
   user: User!
 }
 
@@ -150,5 +162,8 @@ type Review @key(fields: "id") {
 A Subscription for whenever a new review has been added.
 """
 type Subscription {
+  """
+  Optional size option for this variant
+  """
   reviewAdded: Review
 }
